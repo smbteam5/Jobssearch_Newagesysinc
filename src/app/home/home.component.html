@@ -1,58 +1,364 @@
 <div class="py-6 bg-primary text-white">
     <div class="container mx-auto">
-            <h1 class="text-4xl font-semibold text-center">All Jobs</h1>
+        <h1 class="text-4xl font-semibold text-center">All Jobs</h1>
     </div>
 </div>
 <div class="container mx-auto">
-    <div class="bg-primary">
-            <div class="grid grid-cols-3 gap-3">
-                    <div class="basis-1/2">03</div>
+    <div class="bg-primary-lg md:mx-4 p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-6   gap-3">
+            <div class="col-span-3">
+                <form>
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+                    <div class="relative">
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search" required>
+                    </div>
+                </form>
 
-                    <div class="basis-1/4">01</div>
-                    <div class="basis-1/4">02</div>
-                </div>
 
-              
+            </div>
+
+            <div class="">
+                <select id="large"
+                    class="block py-3 px-4 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>State</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div class="">
+                <select id="large"
+                    class="block py-3 px-4 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Category</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div class="">
+
+                <button type="button" class="w-full py-3.5 px-5 text-base font-medium focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5   mr-2  dark:focus:ring-yellow-900">
+                    <svg aria-hidden="true" class=" w-5 h-5 m-z-auto " fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+
     </div>
     <div class="p-4">
-            <div class="card rounded bg-white mb-3 p-5">
-                    <div class="flex justify-between">
-                            <div>
-                                <h3>Program, Manager II</h3>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-primary">Save Changes</button>
-                                <!-- <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false"> -->
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
 
-                            </div>
-                          </div>
-                          
-                          <div  class="flex items-center">
-                              <div>
-                                    
-                              </div>
-                              <div>
-                                    <p><span class="mr-2"><img class="" src="../../assets/images/job.svg" alt=""></span> Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and targets...</p>
-
-                              </div>
-                          </div>
-                        <p><span><img class="" src="../../assets/images/history.svg" alt=""></span> Days Ago</p>
-                  </div>
-
-                  <div class="grid grid-cols-3 gap-4">
-                        <div class="col-span-2">
-                                <div class="card rounded bg-white mb-3 p-5">
-                                    1
-                                </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
                         </div>
-                        <div class="">
-                                <div class="card rounded bg-white mb-3 p-5">
-                                        1
-                                    </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
                         </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
+                        </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
+                        </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
+                        </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
+                        </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded bg-white mb-3 p-6 pl-12 card-pos">
+            <div class="badge font-semibold text-lg	text-white">
+                1
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 sm:gap-4 items-center">
+                <div class="col-span-3 sm:col-span-2 lg:col-span-5 mb-2">
+                    <h3 class="text-primary text-xl	">Program, Manager II</h3>
+                </div>
+                <div class="mb-2">
+                    <button type="submit"
+                        class="text-white btn-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Req
+                        #: <span class="font-semibold">1356</span></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-7 sm:gap-4 ">
+                <div class="mb-3">
+                    <h6 class="badge-text text-center">Information Technology</h6>
+                </div>
+                <div class="mb-3 py-1">
+                    <div class="flex ">
+                        <div class="flex-none w-6 py-1">
+                            <img class="" src="../../assets/images/location.svg" alt="">
+                        </div>
+                        <div class="flex-initial w-auto">
+                            <p class="text-icon">Lansdale, NJ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-3">
+                <div class="flex-none w-6 py-1">
+                    <img class="" src="../../assets/images/job.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-blue">Coordinating the functional workstreams, (PTM, MTD and OTC) schedules and
+                        targets...</p>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="flex-none w-6 py-1.5">
+                    <img class="" src="../../assets/images/history.svg" alt="">
+                </div>
+                <div class="flex-initial w-auto">
+                    <p class="text-gray-out">Days Ago</p>
+                </div>
+            </div>
+        </div>
     </div>
-   
-   
-</div>
 
+
+</div>

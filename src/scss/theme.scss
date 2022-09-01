@@ -4,9 +4,85 @@ body{
 .bg-primary{
     background: #455696;
 }
+.bg-primary-lg{
+    background: #374784;
+    border-radius: 0px 0px 6px 6px;
+}
+.text-primary{
+    color: #FB9C30;
+}
+.text-blue{
+    color: #455696;
+}
+.text-gray-out{
+    color: #7C7C7C;
+}
+.text-icon{
+    color: #595C6A;
+}
+.m-z-auto{
+    margin: 0 auto !important;
+}
 .footer{
     background-color: #434343;
     p{
         color: #AEAEAE;
     }
+}
+.sub-text{
+    color: #C9D3F9;
+}
+.sub-hed{
+    background: #F8F8F8;
+    border-bottom: 1px solid #D4D4D4;
+    border-radius: 6px 6px 0px 0px;
+    h6{
+        color: #9D9D9D;
+        span{
+            color: #455696;
+        }
+    }
+}
+.btn-primary{
+    background-color: #455696;
+}
+.text-gray{
+    color: #606060;
+}
+.text-bk{
+    color: #2E2E2E;
+}
+.second-hed{
+    background: #FB9C30;
+    border-radius: 6px 6px 0px 0px;
+}
+.c-list{
+    li{
+        color: #5A5A5A;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+}
+.text-g{
+    color: #272727;
+}
+.card-pos{
+    position: relative;
+    .badge{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../assets/images/gray-bg.png) no-repeat;
+        width: 56px;
+        height: 56px;
+        padding: 7px;
+    }
+}
+.badge-text{
+    background-color: #E9EAEF;
+    border-radius: 100px;
+    padding: 5px 15px;
+    width: 100%;
+    font-size: 14px;
+    color: #515151;
 }
